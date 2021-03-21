@@ -1,0 +1,38 @@
+:host {
+  font-family: "Nosifer", cursive;
+  font-size: 14px;
+  color: #333;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.toolbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  background-color: #1976d2;
+  color: white;
+  font-weight: 600;
+  img {
+    margin: 0 16px;
+  }
+}
+
+.content {
+  margin-top: 100px;
+}
+
+.post-container {
+  padding: 20px;
+  border: 1px solid lightblue;
+  border-radius: 5px;
+  margin: 10px 0;
+  h4 {
+    margin: 0;
+  }
+}

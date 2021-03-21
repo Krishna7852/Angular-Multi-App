@@ -12,6 +12,9 @@
           "/manifest.webmanifest",
           "/*.css",
           "/*.js"
+        ],
+        "urls": [
+          "https://fonts.googleapis.com/css2?family=Nosifer&display=swap"
         ]
       }
     },
@@ -20,10 +23,17 @@
       "installMode": "lazy",
       "updateMode": "prefetch",
       "resources": {
-        "files": [
-          "/assets/**",
-          "/*.(eot|svg|cur|jpg|png|webp|gif|otf|ttf|woff|woff2|ani)"
-        ]
+        "files": ["/assets/**"]
+      }
+    }
+  ],
+  "dataGroups": [
+    {
+      "name": "posts",
+      "urls": ["https://jsonplaceholder.typicode.com/posts"],
+      "cacheConfig": {
+        "maxSize": 5,
+        "maxAge": "50h"
       }
     }
   ]
